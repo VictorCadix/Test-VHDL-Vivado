@@ -1,20 +1,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+USE ieee.std_logic_arith.ALL;
+USE ieee.std_logic_unsigned.ALL;
 
 entity Decoder is
-  Port (code: IN  std_logic_vector(3 DOWNTO 0);
-  led  : OUT std_logic_vector(6 DOWNTO 0)
+  Port (
+    code : IN  std_logic_vector(3 DOWNTO 0);
+    led  : OUT std_logic_vector(6 DOWNTO 0)
   );
-end Decoder;
+end entity Decoder;
 
 architecture Dataflow of Decoder is
 begin
@@ -31,4 +25,4 @@ begin
                 "0000100" WHEN "1001",      
                 "1111110" WHEN others;
 
-end Dataflow;
+end architecture Dataflow;
