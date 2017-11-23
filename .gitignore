@@ -4,3 +4,6 @@ Test-VHDL-Vivado.ip_user_files/*
 Test-VHDL-Vivado.runs/*
 Test-VHDL-Vivado.sim/*
 Test-VHDL-Vivado.xpr
+vivado.jou
+vivado.log
+*.str
